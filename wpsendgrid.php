@@ -59,7 +59,6 @@ if ( function_exists('wp_mail') )
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-tools.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-settings.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-mc-optin.php';
-require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-statistics.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/sendgrid/sendgrid-wp-mail.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-nlvx-widget.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-virtual-pages.php';
@@ -85,9 +84,6 @@ if ( 'true' != Sendgrid_Tools::get_mc_widget_notice_dismissed() and
 
 // Initialize SendGrid Settings
 new Sendgrid_Settings( plugin_basename( __FILE__ ) );
-
-// Initialize SendGrid Statistics
-new Sendgrid_Statistics();
 
 // Initialize SendGrid Filters
 new Sendgrid_Filters();
