@@ -10,6 +10,9 @@ Text Domain: sendgrid-email-delivery-simplified
 License: GPLv2
 */
 
+require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+require_once plugin_dir_path( __FILE__ ) . 'vendor/is_mail.php';
+
 // SendGrid configurations
 define( 'SENDGRID_CATEGORY', 'wp_sendgrid_plugin' );
 define( 'SENDGRID_PLUGIN_SETTINGS', 'settings_page_sendgrid-settings' );
