@@ -2,7 +2,6 @@
 
 require_once plugin_dir_path( __FILE__ ) . 'sendgrid/class-sendgrid-smtp.php';
 require_once plugin_dir_path( __FILE__ ) . 'class-sendgrid-tools.php';
-require_once plugin_dir_path( __FILE__ ) . 'class-sendgrid-nlvx.php';
 require_once plugin_dir_path( __FILE__ ) . 'class-sendgrid-mc-optin.php';
 
 class Sendgrid_Settings {
