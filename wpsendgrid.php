@@ -63,23 +63,6 @@ require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-nlvx-widget.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-virtual-pages.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-filters.php';
 
-// Widget Registration
-if ( 'true' == Sendgrid_Tools::get_mc_auth_valid() ) {
-  add_action( 'widgets_init', 'register_sendgrid_widgets' );
-} else {
-  add_action( 'widgets_init', 'unregister_sendgrid_widgets' );
-}
-
-// Widget notice dismissed
-if ( isset( $_POST['sg_dismiss_widget_notice'] ) ) {
-  Sendgrid_Tools::set_mc_widget_notice_dismissed( 'true' );
-}
-
-// Display widget notice
-if ( 'true' != Sendgrid_Tools::get_mc_widget_notice_dismissed() and
-  ( !is_multisite() or ( is_multisite() and ( get_option( 'sendgrid_can_manage_subsite' ) or is_main_site() ) ) ) ) {
-  add_action( 'admin_notices', 'sg_subscription_widget_admin_notice' );
-}
 
 // Initialize SendGrid Settings
 new Sendgrid_Settings( plugin_basename( __FILE__ ) );
