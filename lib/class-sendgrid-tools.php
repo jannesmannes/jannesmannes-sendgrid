@@ -1449,23 +1449,6 @@ class Sendgrid_Tools
   }
 }
 
-/**
- * Function that registers the SendGrid plugin widgets
- *
- * @return void
- */
-function register_sendgrid_widgets() {
-  register_widget( 'SendGrid_NLVX_Widget' );
-}
-
-/**
- * Function that unregisters the SendGrid plugin widgets
- *
- * @return void
- */
-function unregister_sendgrid_widgets() {
-  unregister_widget( 'SendGrid_NLVX_Widget' );
-}
 
 /**
  * Function that outputs the SendGrid widget notice

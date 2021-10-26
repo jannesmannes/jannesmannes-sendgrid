@@ -59,7 +59,6 @@ require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-tools.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-settings.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-mc-optin.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/sendgrid/sendgrid-wp-mail.php';
-require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-nlvx-widget.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-virtual-pages.php';
 require_once plugin_dir_path( __FILE__ ) . 'lib/class-sendgrid-filters.php';
 
