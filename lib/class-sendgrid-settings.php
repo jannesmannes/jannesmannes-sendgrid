@@ -49,7 +49,7 @@ class Sendgrid_Settings {
       add_action( 'network_admin_menu', array( __CLASS__, 'add_network_settings_menu' ) );
     }
     // Add SendGrid Help contextual menu in the settings page
-    add_filter( 'contextual_help', array( __CLASS__, 'show_contextual_help' ), 10, 3 );
+    //add_filter( 'contextual_help', array( __CLASS__, 'show_contextual_help' ), 10, 3 );
     // Add SendGrid javascripts in header
     add_action( 'admin_enqueue_scripts', array( __CLASS__, 'add_headers' ) );
   }
@@ -59,8 +59,9 @@ class Sendgrid_Settings {
    * @return void
    */
   public static function add_settings_menu() {
-    add_options_page( __( 'SendGrid' ), __( 'SendGrid' ), 'manage_options', 'sendgrid-settings',
-      array( __CLASS__, 'show_settings_page' ));
+    $adminPage = add_options_page( __( 'SendGrid' ), __( 'SendGrid' ), 'manage_options', 'sendgrid-settings', array( __CLASS__, 'show_settings_page' ));
+
+    add_action('load-'.$adminPage, [__CLASS__, 'loadSendgridHelpTab']);
   }
 
   /**
@@ -105,6 +106,17 @@ class Sendgrid_Settings {
     }
 
     return $contextual_help;
+  }
+
+
+  public static function loadSendgridHelpTab(  ) {
+        $screen = get_current_screen();
+
+      $screen->add_help_tab( array(
+          'id'    => 'sendgrid_help_tab',
+          'title' => __('Sendgrid help'),
+          'content'   => file_get_contents( dirname( __FILE__ ) . '/../view/sendgrid_contextual_help.php' ),
+      ) );
   }
 
   /**

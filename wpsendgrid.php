@@ -17,7 +17,6 @@ require_once plugin_dir_path( __FILE__ ) . 'vendor/is_mail.php';
 // SendGrid configurations
 define( 'SENDGRID_CATEGORY', 'wp_sendgrid_plugin' );
 define( 'SENDGRID_PLUGIN_SETTINGS', 'settings_page_sendgrid-settings' );
-define( 'SENDGRID_PLUGIN_STATISTICS', 'dashboard_page_sendgrid-statistics' );
 
 if ( version_compare( phpversion(), '5.6.0', '<' ) ) {
   add_action( 'admin_notices', 'php_version_error' );
