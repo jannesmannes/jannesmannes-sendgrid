@@ -1,0 +1,24 @@
+{
+    "name": "jannesenmannes/sendgrid-email-delivery-simplified",
+    "type": "wordpress-plugin",
+    "description": "Jannes & Mannes Sendgrid plugin for WordPress",
+    "keywords": ["wordpress", "sendgrid", "email delivery"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Henkes",
+            "email": "jan@jannesmannes.nl",
+            "homepage": "https://jannesmannes.nl",
+            "role": "Developer"
+        },
+        {
+            "name": "Jorn Henkes",
+            "email": "jorn@jannesmannes.nl",
+            "homepage": "https://jannesmannes.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1 || ^8.0"
+    },
+}
