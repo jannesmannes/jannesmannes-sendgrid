@@ -1,5 +1,5 @@
 {
-    "name": "jannesmannes/jannesmannes-sengrid",
+    "name": "jannesmannes/jannesmannes-sendgrid",
     "type": "wordpress-plugin",
     "description": "Jannes & Mannes Sendgrid plugin for WordPress",
     "keywords": ["wordpress", "sendgrid", "email delivery"],
