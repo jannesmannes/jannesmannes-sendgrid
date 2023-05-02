@@ -1,2 +1,5 @@
-composer config repositories.sendgrid-email-delivery-simplified vcs git@bitbucket.org:jannesenmannes/sendgrid-email-delivery-simplified.git
-composer require jannesenmannes/sendgrid-email-delivery-simplified
+# Setup plugin
+```
+composer config repositories.jannesmannes-sendgrid vcs https://github.com/jannesmannes/jannesmannes-sendgrid.git
+composer require jannesmannes/jannesmannes-sendgrid:dev-master
+```

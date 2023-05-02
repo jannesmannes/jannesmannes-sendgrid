@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: SendGrid
-Plugin URI: https://bitbucket.org/jannesenmannes/sendgrid-email-delivery-simplified/
+Plugin Name: SendGrid by Jannes & Mannes
+Plugin URI: https://github.com/jannesmannes/jannesmannes-sendgrid/
 Description: Email Delivery. Simplified. SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability and real-time analytics along with flexible APIs that make custom integration a breeze.
-Version: 2.0.0
+Version: 2.1.0
 Author: Jannes & Mannes
 Author URI: https://jannesmannes.nl
 Text Domain: sendgrid-email-delivery-simplified
